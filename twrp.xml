@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="omnirom" fetch="https://github.com/omnirom/" />
+
+  <remove-project path="bootable/recovery" name="LineageOS/android_bootable_recovery" groups="pdk" />
+  <project path="bootable/recovery" name="android_bootable_recovery" remote="omnirom" clone-depth="1" revision="android-7.1" />
+
+  <project path="external/busybox" name="LineageOS/android_external_busybox" remote="github" clone-depth="1" revision="cm-14.1" />
+</manifest>
